@@ -29,32 +29,32 @@
         </section>
         <section class="w-1/2 p-4">
             <h1 class="font-bold text-3xl mb-4 px-8">Register a New User</h1>
-            <form class="px-8 pt-6 pb-8 mb-4">
+            <form class="px-8 pt-6 pb-8 mb-4" method="POST" action="/api/exercise/new-user">
                 <div class="mb-6">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                         Username
                     </label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="username" type="text" placeholder="Enter Username" required>
+                        name="username" id="username" type="text" placeholder="Enter Username" required>
                 </div>
                 <div class="flex items-center justify-between">
-                    <button
+                    <input
                         class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="button">
+                        type="submit">
                         Submit
-                    </button>
+                    </input>
                 </div>
             </form>
             <h1 class="font-bold text-3xl mb-4 px-8">Add Exercises</h1>
-            <form class="px-8 pt-6 pb-8 mb-4">
+            <form class="px-8 pt-6 pb-8 mb-4" method="POST" action="/api/exercise/add">
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                        Username
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="userId">
+                        User Id
                     </label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="username" type="text" placeholder="Enter Username" required>
+                        name="userId" id="userId" type="text" placeholder="Enter User Id" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="description">
@@ -62,7 +62,7 @@
                     </label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="description" type="text" placeholder="Enter Description" required>
+                        name="description" id="description" type="text" placeholder="Enter Description" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="duration">
@@ -70,7 +70,7 @@
                     </label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="duration" type="number" min="0" placeholder="Enter Duration(in mins.)" required>
+                        name="duration" id="duration" type="number" min="0" placeholder="Enter Duration(in mins.)" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="date">
@@ -78,14 +78,14 @@
                     </label>
                     <input
                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="date" type="date" placeholder="Enter Date (yyyy-mm-dd)" required>
+                        name="date" id="date" type="date" placeholder="Enter Date (yyyy-mm-dd)" required>
                 </div>
                 <div class="flex items-center justify-between">
-                    <button
+                    <input
                         class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="button">
+                        type="submit">
                         Submit
-                    </button>
+                    </input>
                 </div>
             </form>
         </section>
