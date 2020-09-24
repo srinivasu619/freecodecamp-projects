@@ -1,0 +1,17 @@
+{
+  "name": "exercisetrackerservice",
+  "version": "0.0.1",
+  "description": "This is Node JS Full Stack Application for Exercise Tracking of users.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "srinivasu619 <Kotla Soma Srinivasu>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6"
+  }
+}
